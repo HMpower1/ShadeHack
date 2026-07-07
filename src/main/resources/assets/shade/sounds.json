@@ -1,0 +1,92 @@
+{
+  "keypress": {
+    "sounds": [
+      "shade:keypress"
+    ]
+  },
+  "keyrelease": {
+    "sounds": [
+      "shade:keyrelease"
+    ]
+  },
+  "uwu": {
+    "sounds": [
+      "shade:uwu"
+    ]
+  },
+  "disable": {
+    "sounds": [
+      "shade:disable"
+    ]
+  },
+  "enable": {
+    "sounds": [
+      "shade:enable"
+    ]
+  },
+  "moan1": {
+    "sounds": [
+      "shade:moan1"
+    ]
+  },
+  "moan2": {
+    "sounds": [
+      "shade:moan2"
+    ]
+  },
+  "moan3": {
+    "sounds": [
+      "shade:moan3"
+    ]
+  },
+  "moan4": {
+    "sounds": [
+      "shade:moan4"
+    ]
+  },
+  "skeet": {
+    "sounds": [
+      "shade:skeet"
+    ]
+  },
+  "orthodox": {
+    "sounds": [
+      "shade:orthodox"
+    ]
+  },
+  "boolean": {
+    "sounds": [
+      "shade:boolean"
+    ]
+  },
+  "scroll": {
+    "sounds": [
+      "shade:scroll"
+    ]
+  },
+  "swipein": {
+    "sounds": [
+      "shade:swipein"
+    ]
+  },
+  "swipeout": {
+    "sounds": [
+      "shade:swipeout"
+    ]
+  },
+  "pmsound": {
+    "sounds": [
+      "shade:pmsound"
+    ]
+  },
+  "rifk": {
+    "sounds": [
+      "shade:rifk"
+    ]
+  },
+  "cutie": {
+    "sounds": [
+      "shade:cutie"
+    ]
+  }
+}

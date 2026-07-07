@@ -1,0 +1,50 @@
+package shade.utility.render;
+
+import net.minecraft.util.Identifier;
+
+public final class TextureStorage {
+    public static final Identifier crystalTexture2 = Identifier.of("shade", "textures/misc/end_crystal2.png");
+    public static final Identifier skull = Identifier.of("shade", "textures/hud/elements/skull.png");
+    public static final Identifier star = Identifier.of("shade", "textures/particles/star.png");
+    public static final Identifier heart = Identifier.of("shade", "textures/particles/heart.png");
+    public static final Identifier dollar = Identifier.of("shade", "textures/particles/dollar.png");
+    public static final Identifier snowflake = Identifier.of("shade", "textures/particles/snowflake.png");
+    public static final Identifier firefly = Identifier.of("shade", "textures/particles/firefly.png");
+    public static final Identifier arrow = Identifier.of("shade", "textures/hud/elements/triangle.png");
+    public static final Identifier capture = Identifier.of("shade", "textures/hud/elements/capture.png");
+    public static final Identifier bubble = Identifier.of("shade", "textures/particles/hitbubble.png");
+    public static final Identifier default_circle = Identifier.of("shade", "textures/particles/circle.png");
+    public static final Identifier container = Identifier.of("shade", "textures/hud/elements/container.png");
+    public static final Identifier guiArrow = Identifier.of("shade", "textures/gui/elements/arrow.png");
+    public static final Identifier Gear = Identifier.of("shade", "textures/gui/headers/client.png");
+    public static final Identifier candle = Identifier.of("shade", "textures/hud/elements/candle.png");
+    public static final Identifier thTeam = Identifier.of("shade", "textures/gui/elements/thteam.png");
+    public static final Identifier donation = Identifier.of("shade", "textures/gui/elements/donationalerts.png");
+    public static final Identifier chestIcon = Identifier.of("shade", "textures/hud/icons/chest.png");
+    public static final Identifier brokenShield = Identifier.of("shade", "textures/hud/elements/broken_shield.png");
+    public static final Identifier miniLogo = Identifier.of("shade", "textures/hud/icons/mini_logo.png");
+    public static final Identifier playerIcon = Identifier.of("shade", "textures/gui/headers/player.png");
+    public static final Identifier serverIcon = Identifier.of("shade", "textures/hud/icons/server.png");
+    public static final Identifier proxyIcon = Identifier.of("shade", "textures/hud/icons/proxy.png");
+    public static final Identifier waypoint = Identifier.of("shade", "textures/hud/elements/waypoint.png");
+    public static final Identifier configIcon = Identifier.of("shade", "textures/gui/elements/configpng.png");
+    public static final Identifier waypointIcon = Identifier.of("shade", "textures/gui/elements/waypointicon.png");
+    public static final Identifier macrosIcon = Identifier.of("shade", "textures/gui/elements/macrosicon.png");
+    public static final Identifier speedometerIcon = Identifier.of("shade", "textures/hud/icons/speedometer.png");
+    public static final Identifier lagIcon = Identifier.of("shade", "textures/hud/elements/lag.png");
+    public static final Identifier fpsIcon = Identifier.of("shade", "textures/hud/icons/fps.png");
+    public static final Identifier pingIcon = Identifier.of("shade", "textures/hud/icons/ping.png");
+    public static final Identifier swordIcon = Identifier.of("shade", "textures/hud/icons/sword.png");
+    public static final Identifier memoryIcon = Identifier.of("shade", "textures/hud/icons/memory.png");
+    public static final Identifier tpsIcon = Identifier.of("shade", "textures/hud/icons/tps.png");
+    public static final Identifier boykisser = Identifier.of("shade", "textures/hud/elements/boykisser.png");
+    public static final Identifier paimon = Identifier.of("shade", "textures/hud/elements/paimon.png");
+    public static final Identifier baltika = Identifier.of("shade", "textures/hud/elements/baltika.png");
+    public static final Identifier kowk = Identifier.of("shade", "textures/hud/elements/kowk.png");
+    public static final Identifier thudPic = Identifier.of("shade", "textures/hud/elements/thud.png");
+    public static final Identifier coordsIcon = Identifier.of("shade", "textures/hud/icons/coords.png");
+    public static final Identifier sunRiseSkin = Identifier.of("shade", "textures/misc/sunskin.png");
+    public static final Identifier crackedSkin = Identifier.of("shade", "textures/gui/elements/cracked.png");
+    public static final Identifier questionPic = Identifier.of("shade", "textures/gui/helper/pic1.png");
+    public static final Identifier cutie = Identifier.of("shade", "textures/gui/images/cutie.png");
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "shade",
+  "version": "1.7",
+  "icon": "icon.png",
+  "name": "Shade",
+  "description": "Player Assistance Mod",
+  "authors": [
+    {
+      "name": "hmpower",
+      "contact": {
+        "discord": "hmpower"
+      }
+    },
+    {
+      "name": "06ED",
+      "contact": {
+        "discord": ""
+      }
+    }
+  ],
+  "license": "GNU General Public License v3.0",
+  "accessWidener": "shade.accesswidener",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "shade.Shade"
+    ]
+  },
+  "contact": {
+    "sources": "",
+    "homepage": "",
+    "issues": ""
+  },
+  "mixins": [
+    "shade.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~1.21.8",
+    "java": ">=21"
+  },
+  "suggests": {
+    "sodium": "*",
+    "exordium": "*",
+    "starlight": "*",
+    "ias": "*",
+    "viafabricplus": "*"
+  }
+}
