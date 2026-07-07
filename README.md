@@ -40,14 +40,6 @@
 - [Performance guide for Minecraft 1.20.4+ Clients](https://gist.github.com/HexedHero/aab340a84db51913cb1106c2d85f4e4f)
 - [Setup guide by @DevilishRak](https://exoguidemc.vercel.app/)
 
-## Credits
-
-- [Ai_24](https://www.youtube.com/@Ai_24) for cool showcase
-- [KiLAB Gaming](https://www.youtube.com/@KiLABGaming) for complete overview
-- [@meteordevelopment](https://github.com/meteordevelopment) for orbit
-- [@ladysnake](https://github.com/ladysnake) for satin
-- [@0x3C50](https://github.com/0x3C50/Renderer) for the renderer
-
 ## Support
 
 Jeśli podoba Ci się moja praca i chcesz wesprzeć dalszy rozwój projektów, możesz postawić mi wirtualną kawę lub przekazać dobrowolną darowiznę:
