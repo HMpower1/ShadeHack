@@ -54,25 +54,6 @@
 - [@ladysnake](https://github.com/ladysnake) for satin
 - [@0x3C50](https://github.com/0x3C50/Renderer) for the renderer
 
-## Screenshots
-<details>
-<summary>GUI</summary>
-
-![image](assets/1.png)
-</details>
-<details>
-<summary>CRYSTAL HVH</summary>
-
-![image](assets/2.png)
-![image](assets/3.png)
-![image](assets/4.png)
-</details>
-<details>
-<summary>SWORD HVH</summary>
-
-![image](assets/5.gif)
-</details>
-
 ![image](https://github.com/Pan4ur/Shade-Recode/assets/82473048/1e56338f-58a1-4759-8234-858878bdde3f)
 
 ## Addons
