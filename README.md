@@ -2,6 +2,9 @@
     <img src="https://i.imgur.com/ZiJ0r7y.png" style="width: 69%">
 </p>
 
+> [!NOTE]
+> Projekt **ShadeHack** w swoich początkowych fazach rozwoju mocno wzorował się na kliencie **ThunderHack**, czerpiąc z niego inspiracje oraz wybrane rozwiązania.
+
 > [!WARNING]
 > Work on Shade Recode is completely stopped, 
 > it will be replaced by CatLean, a new free client
@@ -77,4 +80,4 @@
 ### Resources
 
 - [Addon Template](https://github.com/cvs0/Shade-Recode-Addon-Template) by cvs0
-- [Shade Addon Docs (COMING SOON)]()
+- [ShadeHack Addon Docs (COMING SOON)]()
