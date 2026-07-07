@@ -58,4 +58,4 @@
 ## Support
 
 Jeśli podoba Ci się moja praca i chcesz wesprzeć dalszy rozwój projektów, możesz postawić mi wirtualną kawę lub przekazać dobrowolną darowiznę:
-- [👉 Wesprzyj mój projekt (TUTAJ WLEJ SWÓJ LINK) 👈](https://link-do-twojego-wsparcia.com)
+- [👉 Wesprzyj mój projekt https://tipply.pl/@doormc 👈]
