@@ -48,13 +48,6 @@
 - [@ladysnake](https://github.com/ladysnake) for satin
 - [@0x3C50](https://github.com/0x3C50/Renderer) for the renderer
 
-## Addons
-
-### Resources
-
-- [Addon Template](https://github.com/cvs0/Shade-Recode-Addon-Template) by cvs0
-- [ShadeHack Addon Docs (COMING SOON)]()
-
 ## Support
 
 Jeśli podoba Ci się moja praca i chcesz wesprzeć dalszy rozwój projektów, możesz postawić mi wirtualną kawę lub przekazać dobrowolną darowiznę:
