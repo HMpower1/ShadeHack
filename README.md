@@ -6,12 +6,6 @@
 > [!NOTE]
 > Projekt **ShadeHack** w swoich początkowych fazach rozwoju mocno wzorował się na kliencie [ThunderHack-Recode](https://github.com/Pan4ur/ThunderHack-Recode), czerpiąc z niego inspiracje oraz wybrane rozwiązania.
 
-> [!WARNING]
-> Work on Shade Recode is completely stopped, 
-> it will be replaced by CatLean, a new free client
-> with closed source code and higher quality modules,
-> you can follow CatLean in my [Discord server](https://discord.gg/PvBhPWdkVD)
-
 <div align="center">
 <img src="https://cdn.discordapp.com/attachments/934396624111824900/1230019159027617792/furro.gif?ex=6631cb9c&is=661f569c&hm=b6cee2cd9b6ec238f54c80dcfc421f2c8ecd3f750f2f61a62087d1e01d201e4d&" style="width: 69%">
 </div>
