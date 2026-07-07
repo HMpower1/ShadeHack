@@ -3,7 +3,7 @@
 </p>
 
 > [!NOTE]
-> Projekt **ShadeHack** w swoich początkowych fazach rozwoju mocno wzorował się na kliencie **ThunderHack**, czerpiąc z niego inspiracje oraz wybrane rozwiązania.
+> Projekt **ShadeHack** w swoich początkowych fazach rozwoju mocno wzorował się na kliencie [ThunderHack-Recode](https://github.com/Pan4ur/ThunderHack-Recode), czerpiąc z niego inspiracje oraz wybrane rozwiązania.
 
 > [!WARNING]
 > Work on Shade Recode is completely stopped, 
@@ -54,3 +54,8 @@
 
 - [Addon Template](https://github.com/cvs0/Shade-Recode-Addon-Template) by cvs0
 - [ShadeHack Addon Docs (COMING SOON)]()
+
+## Support
+
+Jeśli podoba Ci się moja praca i chcesz wesprzeć dalszy rozwój projektów, możesz postawić mi wirtualną kawę lub przekazać dobrowolną darowiznę:
+- [👉 Wesprzyj mój projekt (TUTAJ WLEJ SWÓJ LINK) 👈](https://link-do-twojego-wsparcia.com)
