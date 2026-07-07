@@ -54,8 +54,6 @@
 - [@ladysnake](https://github.com/ladysnake) for satin
 - [@0x3C50](https://github.com/0x3C50/Renderer) for the renderer
 
-![image](https://github.com/Pan4ur/Shade-Recode/assets/82473048/1e56338f-58a1-4759-8234-858878bdde3f)
-
 ## Addons
 
 ### Resources
