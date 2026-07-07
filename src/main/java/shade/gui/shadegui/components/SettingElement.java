@@ -1,4 +1,4 @@
-package shade.gui.exogui.components;
+package shade.gui.shadegui.components;
 
 import net.minecraft.client.util.math.MatrixStack;
 import shade.setting.Setting;

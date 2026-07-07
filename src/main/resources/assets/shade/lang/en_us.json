@@ -200,7 +200,7 @@
   "descriptions.client.rotations": "Module responsible for setting up rotations.",
   "descriptions.client.discordrpc": "Shade discord rich presence.",
   "descriptions.client.fastlatency": "Calculates ping faster than the minecraft method.",
-  "descriptions.client.exogui": "Another variant of gui.",
+  "descriptions.client.shadegui": "Another variant of gui.",
   "descriptions.client.waypoints": "Renders specified waypoints.",
   "descriptions.client.soundfx": "Changes different sounds in the game.",
 

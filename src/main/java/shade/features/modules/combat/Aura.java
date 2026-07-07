@@ -58,7 +58,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import static net.minecraft.item.consume.UseAction.BLOCK;
+import static net.minecraft.util.UseAction.BLOCK;
 import static net.minecraft.util.math.MathHelper.wrapDegrees;
 import static shade.features.modules.client.ClientSettings.isPl;
 import static shade.utility.math.MathUtility.random;

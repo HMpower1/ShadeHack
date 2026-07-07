@@ -1,4 +1,4 @@
-﻿{
+{
   "descriptions.combat.aimbot": "Plynne celowanie w cel.",
   "descriptions.combat.antibot": "Usuwa boty tworzone przez Matrix.",
   "descriptions.combat.antilegitmiss": "Anuluje uderzenie, gdy nie celujesz w obiekt, ktory probujesz trafic.",
@@ -175,7 +175,7 @@
   "descriptions.player.noserverslot": "Nie pozwala serwerowi zmieniac slotu na hotbarze.",
   "descriptions.player.pearlbait": "Zapobiega teleportacji z perly.",
   "descriptions.player.pearlblockthrow": "Pozwala rzucac perla w bloki. (Sunrise)",
-  "descriptions.player.perfectdelay": "Pomaga lepiej trafiać w timing.",
+  "descriptions.player.perfectdelay": "Pomaga lepiej trafia� w timing.",
   "descriptions.player.portalgodmode": "Daje nietykalnosc po teleportacji.",
   "descriptions.player.portalinventory": "Pozwala otwierac ekwipunek w portalu.",
   "descriptions.player.regen": "Pozwala szybciej regenerowac zdrowie (1.8).",
@@ -200,7 +200,7 @@
   "descriptions.client.rotations": "Modul odpowiedzialny za ustawianie rotacji.",
   "descriptions.client.discordrpc": "Status Discord Rich Presence dla Shade.",
   "descriptions.client.fastlatency": "Liczy ping szybciej niz metoda Minecrafta.",
-  "descriptions.client.exogui": "Inny wariant interfejsu.",
+  "descriptions.client.shadegui": "Inny wariant interfejsu.",
   "descriptions.client.waypoints": "Renderuje wybrane waypointy.",
   "descriptions.client.soundfx": "Zmienia rozne dzwieki w grze.",
 

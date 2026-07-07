@@ -1,8 +1,8 @@
-package shade.gui.exogui.components;
+package shade.gui.shadegui.components;
 
 import net.minecraft.client.util.math.MatrixStack;
 import shade.gui.font.FontRenderers;
-import shade.gui.exogui.ExoGui;
+import shade.gui.shadegui.ShadeGuiScreen;
 import shade.setting.Setting;
 import shade.setting.impl.SettingGroup;
 import shade.utility.render.Render2DEngine;
@@ -19,7 +19,7 @@ public class ParentComponent extends SettingElement {
     @Override
     public void render(MatrixStack stack, int mouseX, int mouseY, float partialTicks) {
         super.render(stack, mouseX, mouseY, partialTicks);
-        if ((getY() > ExoGui.getInstance().main_posY + ExoGui.getInstance().height) || getY() < ExoGui.getInstance().main_posY) {
+        if ((getY() > ShadeGuiScreen.getInstance().main_posY + ShadeGuiScreen.getInstance().height) || getY() < ShadeGuiScreen.getInstance().main_posY) {
             return;
         }
         FontRenderers.modules.drawCenteredString(stack, getSetting().getName(), getX() + width / 2f, getY() + 2, new Color(0xB0FFFFFF, true).getRGB());
@@ -29,7 +29,7 @@ public class ParentComponent extends SettingElement {
 
     @Override
     public void mouseClicked(int mouseX, int mouseY, int button) {
-        if ((getY() > ExoGui.getInstance().main_posY + ExoGui.getInstance().height) || getY() < ExoGui.getInstance().main_posY) {
+        if ((getY() > ShadeGuiScreen.getInstance().main_posY + ShadeGuiScreen.getInstance().height) || getY() < ShadeGuiScreen.getInstance().main_posY) {
             return;
         }
         if (hovered) {

@@ -11,6 +11,7 @@ import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import shade.Shade;
 import shade.core.manager.client.ModuleManager;
@@ -22,12 +23,12 @@ import static shade.Shade.mc;
 public abstract class MixinTridentItem {
 
     @Inject(method = "onStoppedUsing", at = @At(value = "HEAD"), cancellable = true)
-    public void onStoppedUsingHook(ItemStack stack, World world, LivingEntity user, int remainingUseTicks, CallbackInfoReturnable<Boolean> cir) {
+    public void onStoppedUsingHook(ItemStack stack, World world, LivingEntity user, int remainingUseTicks, CallbackInfo cir) {
         if (user == mc.player && EnchantmentHelper.getTridentSpinAttackStrength(stack, mc.player) > 0) {
             UseTridentEvent e = new UseTridentEvent();
             Shade.EVENT_BUS.post(e);
             if (e.isCancelled())
-                cir.setReturnValue(false);
+                cir.cancel();
         }
     }
 

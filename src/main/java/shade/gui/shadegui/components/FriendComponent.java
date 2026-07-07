@@ -1,4 +1,4 @@
-package shade.gui.exogui.components;
+package shade.gui.shadegui.components;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 import shade.core.Core;
 import shade.core.Managers;
 import shade.gui.font.FontRenderers;
-import shade.gui.exogui.ExoGui;
+import shade.gui.shadegui.ShadeGuiScreen;
 import shade.utility.render.Render2DEngine;
 import shade.utility.render.TextureStorage;
 import shade.utility.render.animation.AnimationUtility;
@@ -107,7 +107,7 @@ public class FriendComponent {
             scroll_animation = AnimationUtility.fast(scroll_animation, 1, 15f);
             posY = (int) Render2DEngine.interpolate(prevPosY, scrollPosY, scroll_animation);
         }
-        if ((posY > ExoGui.getInstance().main_posY + ExoGui.getInstance().height) || posY < ExoGui.getInstance().main_posY) {
+        if ((posY > ShadeGuiScreen.getInstance().main_posY + ShadeGuiScreen.getInstance().height) || posY < ShadeGuiScreen.getInstance().main_posY) {
             return;
         }
         Render2DEngine.drawRound(context.getMatrices(), posX + 5, posY, 285, 30, 4f, Render2DEngine.applyOpacity(new Color(44, 35, 52, 255), getFadeFactor()));
@@ -170,12 +170,12 @@ public class FriendComponent {
     }
 
     public void mouseClicked(int MouseX, int MouseY, int clickedButton) {
-        if ((posY > ExoGui.getInstance().main_posY + ExoGui.getInstance().height) || posY < ExoGui.getInstance().main_posY) {
+        if ((posY > ShadeGuiScreen.getInstance().main_posY + ShadeGuiScreen.getInstance().height) || posY < ShadeGuiScreen.getInstance().main_posY) {
             return;
         }
         if (Render2DEngine.isHovered(MouseX, MouseY, posX + 268, posY + 10, 10, 10)) {
             Managers.FRIEND.removeFriend(name);
-            ExoGui.getInstance().loadFriends();
+            ShadeGuiScreen.getInstance().loadFriends();
         }
     }
 

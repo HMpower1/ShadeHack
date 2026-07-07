@@ -28,7 +28,7 @@ import shade.core.manager.client.ModuleManager;
 import shade.events.impl.*;
 import shade.gui.font.FontRenderers;
 import shade.gui.notification.Notification;
-import shade.gui.exogui.ExoGui;
+import shade.gui.shadegui.ShadeGuiScreen;
 import shade.features.modules.client.HudEditor;
 import shade.features.modules.client.ClientSettings;
 import shade.utility.Timer;
@@ -61,7 +61,7 @@ public final class Core {
 
         Managers.NOTIFICATION.onUpdate();
         Managers.MODULE.onUpdate();
-        ExoGui.getInstance().onTick();
+        ShadeGuiScreen.getInstance().onTick();
 
         if (ModuleManager.clickGui.getBind().getKey() == -1) {
             Command.sendMessage(Formatting.RED + (isPl() ? "Domyslny klawisz ClickGUI -> P" : "Default clickgui keybind --> P"));

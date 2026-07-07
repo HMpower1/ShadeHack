@@ -1,6 +1,6 @@
 package shade.core.manager.client;
 
-import com.mojang.blaze3d.opengl.GlStateManager;
+import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
 import shade.utility.render.Render3DEngine;
 import shade.utility.render.shaders.satin.api.managed.ManagedShaderEffect;

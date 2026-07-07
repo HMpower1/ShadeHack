@@ -1,6 +1,6 @@
 package shade.features.modules.client;
 
-import shade.gui.exogui.ExoGui;
+import shade.gui.shadegui.ShadeGuiScreen;
 import shade.features.modules.Module;
 import shade.setting.Setting;
 import shade.setting.impl.ColorSetting;
@@ -13,12 +13,12 @@ public final class ShadeGui extends Module {
     public static final Setting<Float> scrollSpeed = new Setting<>("ScrollSpeed", 1f, 0.1F, 2.0F);
 
     public ShadeGui() {
-        super("ExoGui", Category.CLIENT);
+        super("ShadeGui", Category.CLIENT);
     }
 
     @Override
     public void onEnable() {
-        mc.setScreen(ExoGui.getExoGui());
+        mc.setScreen(ShadeGuiScreen.getShadeGui());
         disable();
     }
 

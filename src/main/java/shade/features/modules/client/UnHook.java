@@ -92,7 +92,7 @@ public class UnHook extends Module { // komentarz przetlumaczony
                 continue;
             module.enable();
         }
-        ClientSettings.customMainMenu.setValue(true);
+        ClientSettings.customMainMenu.setValue(false);
 
         // Rename cfg dir back
         try {

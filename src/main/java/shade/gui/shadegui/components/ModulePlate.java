@@ -1,4 +1,4 @@
-package shade.gui.exogui.components;
+package shade.gui.shadegui.components;
 
 import net.minecraft.client.resource.language.I18n;
 import net.minecraft.client.util.math.MatrixStack;
@@ -7,7 +7,7 @@ import shade.features.cmd.Command;
 import shade.features.modules.Module;
 import shade.features.modules.client.ShadeGui;
 import shade.gui.font.FontRenderers;
-import shade.gui.exogui.ExoGui;
+import shade.gui.shadegui.ShadeGuiScreen;
 import shade.setting.impl.Bind;
 import shade.utility.render.Render2DEngine;
 import shade.utility.render.animation.AnimationUtility;
@@ -48,7 +48,7 @@ public class ModulePlate {
             posY = (int) Render2DEngine.interpolate(prevPosY, scrollPosY, scroll_animation);
         }
 
-        if ((posY > ExoGui.getInstance().main_posY + ExoGui.getInstance().height) || posY < ExoGui.getInstance().main_posY) {
+        if ((posY > ShadeGuiScreen.getInstance().main_posY + ShadeGuiScreen.getInstance().height) || posY < ShadeGuiScreen.getInstance().main_posY) {
             return;
         }
 
@@ -73,7 +73,7 @@ public class ModulePlate {
             Render2DEngine.drawBlurredShadow(stack, MouseX - 20, MouseY - 20, 40, 40, 60, Render2DEngine.applyOpacity(new Color(0xC3555A7E, true), getFadeFactor()));
         }
 
-        if (ExoGui.selected_plate != this)
+        if (ShadeGuiScreen.selected_plate != this)
             FontRenderers.icons.drawString(stack, "H", (int) (posX + 80f), (int) (posY + 22f), Render2DEngine.applyOpacity(new Color(0xFFECECEC, true).getRGB(), getFadeFactor()));
         else {
 
@@ -182,7 +182,7 @@ public class ModulePlate {
     }
 
     public void mouseClicked(int mouseX, int mouseY, int clickedButton) {
-        if ((posY > ExoGui.getInstance().main_posY + ExoGui.getInstance().height) || posY < ExoGui.getInstance().main_posY) {
+        if ((posY > ShadeGuiScreen.getInstance().main_posY + ShadeGuiScreen.getInstance().height) || posY < ShadeGuiScreen.getInstance().main_posY) {
             return;
         }
         if (listening_bind) {
@@ -207,7 +207,7 @@ public class ModulePlate {
                     module.toggle();
                     break;
                 case 1:
-                    ExoGui.selected_plate = this;
+                    ShadeGuiScreen.selected_plate = this;
                     break;
                 case 2:
                     listening_bind = !listening_bind;

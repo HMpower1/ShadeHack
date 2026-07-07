@@ -1,11 +1,11 @@
-package shade.gui.exogui.components;
+package shade.gui.shadegui.components;
 
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
 import org.lwjgl.glfw.GLFW;
 import shade.Shade;
 import shade.gui.font.FontRenderers;
-import shade.gui.exogui.ExoGui;
+import shade.gui.shadegui.ShadeGuiScreen;
 import shade.setting.Setting;
 import shade.utility.math.MathUtility;
 import shade.utility.render.Render2DEngine;
@@ -39,7 +39,7 @@ public class SliderComponent extends SettingElement {
     @Override
     public void render(MatrixStack stack, int mouseX, int mouseY, float partialTicks) {
         super.render(stack, mouseX, mouseY, partialTicks);
-        if ((getY() > ExoGui.getInstance().main_posY + ExoGui.getInstance().height) || getY() < ExoGui.getInstance().main_posY) {
+        if ((getY() > ShadeGuiScreen.getInstance().main_posY + ShadeGuiScreen.getInstance().height) || getY() < ShadeGuiScreen.getInstance().main_posY) {
             return;
         }
 
@@ -94,7 +94,7 @@ public class SliderComponent extends SettingElement {
 
     @Override
     public void mouseClicked(int mouseX, int mouseY, int button) {
-        if ((getY() > ExoGui.getInstance().main_posY + ExoGui.getInstance().height) || getY() < ExoGui.getInstance().main_posY) {
+        if ((getY() > ShadeGuiScreen.getInstance().main_posY + ShadeGuiScreen.getInstance().height) || getY() < ShadeGuiScreen.getInstance().main_posY) {
             return;
         }
         if (mouseX > x + 154 && mouseX < x + 176 && mouseY > y + height - 11 && mouseY < y + height - 4) {
@@ -168,7 +168,7 @@ public class SliderComponent extends SettingElement {
     public void checkMouseWheel(float value) {
         super.checkMouseWheel(value);
         if (isHovered()) {
-            ExoGui.scroll_lock = true;
+            ShadeGuiScreen.scroll_lock = true;
         } else {
             return;
         }

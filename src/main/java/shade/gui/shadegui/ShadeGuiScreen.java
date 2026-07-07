@@ -1,4 +1,4 @@
-package shade.gui.exogui;
+package shade.gui.shadegui;
 
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
@@ -11,7 +11,7 @@ import shade.features.cmd.Command;
 import shade.features.modules.Module;
 import shade.features.modules.client.ShadeGui;
 import shade.gui.font.FontRenderers;
-import shade.gui.exogui.components.*;
+import shade.gui.shadegui.components.*;
 import shade.setting.Setting;
 import shade.setting.impl.BooleanSettingGroup;
 import shade.setting.impl.ColorSetting;
@@ -34,16 +34,16 @@ import static shade.utility.render.animation.AnimationUtility.fast;
  *
  * @Copyright by Pan4ur#2144
  **/
-public class ExoGui extends Screen {
+public class ShadeGuiScreen extends Screen {
     public static CurrentMode currentMode = CurrentMode.Modules;
     public static boolean scroll_lock = false;
     public static ModulePlate selected_plate, prev_selected_plate;
     public static EaseOutBack open_animation = new EaseOutBack(5);
     public static boolean open_direction = false;
-    private static ExoGui INSTANCE;
+    private static ShadeGuiScreen INSTANCE;
 
     static {
-        INSTANCE = new ExoGui();
+        INSTANCE = new ShadeGuiScreen();
     }
 
     public final ArrayList<ModulePlate> components = new ArrayList<>();
@@ -81,8 +81,8 @@ public class ExoGui extends Screen {
     public static int mouse_x;
     public static int mouse_y;
 
-    public ExoGui() {
-        super(Text.of("ExoGui2"));
+    public ShadeGuiScreen() {
+        super(Text.of("ShadeGui"));
         this.setInstance();
         this.load();
         CategoryY = getCategoryY(new_category);
@@ -93,14 +93,14 @@ public class ExoGui extends Screen {
         return false;
     }
 
-    public static ExoGui getInstance() {
+    public static ShadeGuiScreen getInstance() {
         if (INSTANCE == null) {
-            INSTANCE = new ExoGui();
+            INSTANCE = new ShadeGuiScreen();
         }
         return INSTANCE;
     }
 
-    public static ExoGui getExoGui() {
+    public static ShadeGuiScreen getShadeGui() {
         open_animation = new EaseOutBack();
         open_direction = true;
         return getInstance();
@@ -500,17 +500,17 @@ public class ExoGui extends Screen {
 
         if (isHoveringItem(main_posX + 250, main_posY + 15, 140, 10, (float) mouseX, (float) mouseY) && currentMode == CurrentMode.Modules) {
             searching = true;
-            Shade.currentKeyListener = Shade.KeyListening.ExoGui;
+            Shade.currentKeyListener = Shade.KeyListening.ShadeGui;
         }
 
         if (isHoveringItem(main_posX + 250, main_posY + 15, 110, 10, (float) mouseX, (float) mouseY) && currentMode == CurrentMode.CfgManager) {
             listening_config = true;
-            Shade.currentKeyListener = Shade.KeyListening.ExoGui;
+            Shade.currentKeyListener = Shade.KeyListening.ShadeGui;
         }
 
         if (isHoveringItem(main_posX + 250, main_posY + 15, 110, 10, (float) mouseX, (float) mouseY) && currentMode == CurrentMode.FriendManager) {
             listening_friend = true;
-            Shade.currentKeyListener = Shade.KeyListening.ExoGui;
+            Shade.currentKeyListener = Shade.KeyListening.ShadeGui;
         }
 
         if (isHoveringItem(main_posX, main_posY + main_height - 6, main_width, 12, (float) mouseX, (float) mouseY)) {
@@ -549,7 +549,7 @@ public class ExoGui extends Screen {
     }
 
     public void keyTyped(String typedChar, int keyCode) throws IOException {
-        if (Shade.currentKeyListener != Shade.KeyListening.Sliders && Shade.currentKeyListener != Shade.KeyListening.ExoGui)
+        if (Shade.currentKeyListener != Shade.KeyListening.Sliders && Shade.currentKeyListener != Shade.KeyListening.ShadeGui)
             return;
 
         if (keyCode == 1) {

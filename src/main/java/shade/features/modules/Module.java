@@ -42,7 +42,7 @@ public abstract class Module {
 
     private final List<String> ignoreSoundList = Arrays.asList(
             "ClickGui",
-            "ExoGui",
+            "ShadeGui",
             "HudEditor"
     );
 

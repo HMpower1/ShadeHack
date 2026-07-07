@@ -1,9 +1,9 @@
-package shade.gui.exogui.components;
+package shade.gui.shadegui.components;
 
 import net.minecraft.client.util.math.MatrixStack;
 import shade.features.modules.Module;
 import shade.gui.font.FontRenderers;
-import shade.gui.exogui.ExoGui;
+import shade.gui.shadegui.ShadeGuiScreen;
 import shade.utility.math.MathUtility;
 import shade.utility.render.Render2DEngine;
 
@@ -41,10 +41,10 @@ public class CategoryPlate {
 
     public void mouseClicked(int mouseX, int mouseY, int clickedButton) {
         if (isHovered(mouseX, mouseY)) {
-            ExoGui.getInstance().new_category = this.cat;
-            if (ExoGui.getInstance().current_category == null) {
-                ExoGui.getInstance().current_category = Module.Category.HUD;
-                ExoGui.getInstance().new_category = this.cat;
+            ShadeGuiScreen.getInstance().new_category = this.cat;
+            if (ShadeGuiScreen.getInstance().current_category == null) {
+                ShadeGuiScreen.getInstance().current_category = Module.Category.HUD;
+                ShadeGuiScreen.getInstance().new_category = this.cat;
             }
         }
     }

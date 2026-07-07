@@ -1,9 +1,9 @@
-package shade.gui.exogui.components;
+package shade.gui.shadegui.components;
 
 import net.minecraft.client.util.math.MatrixStack;
 import shade.features.modules.client.HudEditor;
 import shade.gui.font.FontRenderers;
-import shade.gui.exogui.ExoGui;
+import shade.gui.shadegui.ShadeGuiScreen;
 import shade.setting.Setting;
 import shade.utility.render.Render2DEngine;
 
@@ -21,7 +21,7 @@ public class ModeComponent extends SettingElement {
     @Override
     public void render(MatrixStack stack, int mouseX, int mouseY, float partialTicks) {
         super.render(stack, mouseX, mouseY, partialTicks);
-        if ((getY() > ExoGui.getInstance().main_posY + ExoGui.getInstance().height) || getY() < ExoGui.getInstance().main_posY) {
+        if ((getY() > ShadeGuiScreen.getInstance().main_posY + ShadeGuiScreen.getInstance().height) || getY() < ShadeGuiScreen.getInstance().main_posY) {
             return;
         }
         FontRenderers.modules.drawString(stack, getSetting().getName(), getX(), getY() + 5, isHovered() ? -1 : new Color(0xB0FFFFFF, true).getRGB());
@@ -73,7 +73,7 @@ public class ModeComponent extends SettingElement {
 
     @Override
     public void mouseClicked(int mouseX, int mouseY, int button) {
-        if ((getY() > ExoGui.getInstance().main_posY + ExoGui.getInstance().height) || getY() < ExoGui.getInstance().main_posY) {
+        if ((getY() > ShadeGuiScreen.getInstance().main_posY + ShadeGuiScreen.getInstance().height) || getY() < ShadeGuiScreen.getInstance().main_posY) {
             return;
         }
         if (mouseX > x + 114 && mouseX < x + 176 && mouseY > y + 2 && mouseY < y + 15) {

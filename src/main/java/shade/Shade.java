@@ -81,6 +81,6 @@ public class Shade implements ModInitializer {
     }
 
     public enum KeyListening {
-        ExoGui, ClickGui, Search, Sliders, Strings
+        ShadeGui, ClickGui, Search, Sliders, Strings
     }
 }

@@ -32,41 +32,8 @@ public class MixinTitleScreen extends Screen {
 
     @Inject(method = "init", at = @At("RETURN"))
     public void postInitHook(CallbackInfo ci) {
-        if (ClientSettings.customMainMenu.getValue() && !MainMenuScreen.getInstance().confirm && ModuleManager.clickGui.getBind().getKey() != -1) {
-            mc.setScreen(MainMenuScreen.getInstance());
-        }
         if (ModuleManager.clickGui.getBind().getKey() == -1) {
-            DialogScreen dialogScreen2 = new DialogScreen(
-                    TextureStorage.cutie,
-                    isPl() ? "Dziekujemy za pobranie Shade!" : "Thank you for downloading Shade!",
-                    isPl() ? "Menu z funkcjami klienta otwiera klawisz P" : "Menu with client modules is opened with the key - P",
-                    isPl() ? "Wejdz do Minecrafta" : "Join on minecraft",
-                    isPl() ? "Zamknij Minecrafta" : "Close minecraft",
-                    () -> {
-                        ModuleManager.clickGui.setBind(InputUtil.fromTranslationKey("key.keyboard.p").getCode(), false, false);
-                        mc.setScreen(MainMenuScreen.getInstance());
-                    },
-                    () -> {
-                        ModuleManager.clickGui.setBind(InputUtil.fromTranslationKey("key.keyboard.p").getCode(), false, false);
-                        mc.stop();
-                    }
-            );
-            DialogScreen dialogScreen1 = new DialogScreen(
-                    TextureStorage.questionPic,
-                    "Hello!",
-                    "What's your language?",
-                    "Polski",
-                    "English",
-                    () -> {
-                        ClientSettings.language.setValue(ClientSettings.Language.PL);
-                        mc.setScreen(dialogScreen2);
-                    },
-                    () -> {
-                        ClientSettings.language.setValue(ClientSettings.Language.ENG);
-                        mc.setScreen(dialogScreen2);
-                    }
-            );
-            mc.setScreen(dialogScreen1);
+            ModuleManager.clickGui.setBind(InputUtil.fromTranslationKey("key.keyboard.p").getCode(), false, false);
         }
 
         if (Shade.isOutdated && !FabricLoader.getInstance().isDevelopmentEnvironment()) {

@@ -17,7 +17,7 @@
  */
 package shade.utility.render.shaders.satin.api.managed;
 
-import com.mojang.blaze3d.vertex.VertexFormat;
+import net.minecraft.client.render.VertexFormat;
 import net.minecraft.util.Identifier;
 import shade.utility.render.shaders.satin.impl.ReloadableShaderEffectManager;
 

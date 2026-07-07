@@ -1,6 +1,6 @@
 package shade.injection;
 
-import com.mojang.blaze3d.opengl.GlStateManager;
+import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
@@ -36,10 +36,6 @@ public abstract class MixinSplashOverlay {
 
     @Inject(method = "render", at = @At("HEAD"), cancellable = true)
     public void render(DrawContext context, int mouseX, int mouseY, float delta, CallbackInfo ci) {
-        if(ModuleManager.unHook.isEnabled() || !ClientSettings.customLoadingScreen.getValue())
-            return;
-        ci.cancel();
-        renderCustom(context, mouseX, mouseY, delta);
     }
 
     public void renderCustom(DrawContext context, int mouseX, int mouseY, float delta) {

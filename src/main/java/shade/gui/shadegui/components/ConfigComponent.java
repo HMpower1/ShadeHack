@@ -1,10 +1,10 @@
-package shade.gui.exogui.components;
+package shade.gui.shadegui.components;
 
 import net.minecraft.client.gui.DrawContext;
 import shade.core.Managers;
 import shade.features.modules.client.ShadeGui;
 import shade.gui.font.FontRenderers;
-import shade.gui.exogui.ExoGui;
+import shade.gui.shadegui.ShadeGuiScreen;
 import shade.utility.render.Render2DEngine;
 import shade.utility.render.animation.AnimationUtility;
 
@@ -41,7 +41,7 @@ public class ConfigComponent {
             posY = (int) Render2DEngine.interpolate(prevPosY, scrollPosY, scroll_animation);
         }
 
-        if ((posY > ExoGui.getInstance().main_posY + ExoGui.getInstance().height) || posY < ExoGui.getInstance().main_posY) {
+        if ((posY > ShadeGuiScreen.getInstance().main_posY + ShadeGuiScreen.getInstance().height) || posY < ShadeGuiScreen.getInstance().main_posY) {
             return;
         }
 
@@ -110,7 +110,7 @@ public class ConfigComponent {
     }
 
     public void mouseClicked(int MouseX, int MouseY, int clickedButton) {
-        if ((posY > ExoGui.getInstance().main_posY + ExoGui.getInstance().height) || posY < ExoGui.getInstance().main_posY) {
+        if ((posY > ShadeGuiScreen.getInstance().main_posY + ShadeGuiScreen.getInstance().height) || posY < ShadeGuiScreen.getInstance().main_posY) {
             return;
         }
         if (Render2DEngine.isHovered(MouseX, MouseY, posX + 252, posY + 10, 10, 10))
@@ -118,7 +118,7 @@ public class ConfigComponent {
 
         if (Render2DEngine.isHovered(MouseX, MouseY, posX + 268, posY + 10, 10, 10)) {
             Managers.CONFIG.delete(name);
-            ExoGui.getInstance().loadConfigs();
+            ShadeGuiScreen.getInstance().loadConfigs();
         }
     }
 

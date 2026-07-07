@@ -49,7 +49,7 @@ public class ModuleManager implements IManager {
     public static PacketCanceler packetCanceler = new PacketCanceler();
     public static ClientSettings clientSettings = new ClientSettings();
     public static TimerIndicator timerIndicator = new TimerIndicator();
-    public static ShadeGui exoHackGui = new ShadeGui();
+    public static ShadeGui shadeGui = new ShadeGui();
     public static NoServerRotate noServerRotate = new NoServerRotate();
     public static BreakHighLight breakHighLight = new BreakHighLight();
     public static BlockHighLight blockHighLight = new BlockHighLight();

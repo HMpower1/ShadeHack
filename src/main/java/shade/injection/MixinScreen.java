@@ -113,23 +113,13 @@ public abstract class MixinScreen {
 
     @Inject(method = "renderPanoramaBackground", at = @At("HEAD"), cancellable = true)
     public void renderPanoramaBackgroundHook(DrawContext context, float delta, CallbackInfo ci) {
-        if (ClientSettings.customPanorama.getValue() && mc.world == null) {
-            ci.cancel();
-            Render2DEngine.drawMainMenuShader(context.getMatrices(), 0, 0, mc.getWindow().getScaledWidth(), mc.getWindow().getScaledHeight());
-        }
     }
 
     @Inject(method = "renderInGameBackground", at = @At("HEAD"), cancellable = true)
     private void renderInGameBackground(CallbackInfo info) {
-        if (ModuleManager.noRender.isEnabled() && ModuleManager.noRender.disableGuiBackGround.getValue()) {
-            info.cancel();
-        }
     }
 
     @Inject(method = "renderBackground(Lnet/minecraft/client/gui/DrawContext;IIF)V", at = @At("HEAD"), cancellable = true)
     public void onRenderBackground(DrawContext context, int mouseX, int mouseY, float partialTicks, CallbackInfo ci) {
-        if (ModuleManager.noRender.isEnabled() && ModuleManager.noRender.disableGuiBackGround.getValue() && mc.world != null) {
-            ci.cancel();
-        }
     }
 }

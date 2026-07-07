@@ -27,7 +27,7 @@ public class NoRender extends Module {
         super("NoRender", Category.RENDER);
     }
 
-    public final Setting<Boolean> disableGuiBackGround = new Setting<>("noGuiBackGround", true);
+    public final Setting<Boolean> disableGuiBackGround = new Setting<>("noGuiBackGround", false);
     public final Setting<Boolean> noSwing = new Setting<>("NoHandSwing", false);
     public final Setting<Boolean> auto = new Setting<>("Auto", false);
     public final Setting<Boolean> hurtCam = new Setting<>("HurtCam", true);
