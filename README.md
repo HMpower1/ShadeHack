@@ -42,5 +42,5 @@
 
 ## Support
 
-Jeśli podoba Ci się moja praca i chcesz wesprzeć dalszy rozwój projektów, możesz postawić mi wirtualną kawę lub przekazać dobrowolną darowiznę:
-- [👉 Wesprzyj mój projekt https://tipply.pl/@ShadeHack 👈]
+If you like my work and want to support the further development of these projects, you can buy me a virtual coffee or make a voluntary donation.:
+- 👉 Support my project https://tipply.pl/@ShadeHack 👈
