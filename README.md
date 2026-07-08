@@ -3,6 +3,14 @@
     <img src="https://i.imgur.com/vIzGeIZ.png" style="width: 128px; height: auto;">
 </p>
 
+<p align="center">
+  <a href="https://discord.gg/gE44XAbwN" target="_blank">
+    <img src="https://img.shields.io/discord/934396624111824900?style=for-the-badge&logo=discord&logoColor=white&color=5865F2&label=Dołącz%20do%20naszego%20Discorda" alt="Discord Server">
+  </a>
+</p>
+
+---
+
 > [!NOTE]
 > Projekt **ShadeHack** w swoich początkowych fazach rozwoju mocno wzorował się na kliencie [ThunderHack-Recode](https://github.com/Pan4ur/ThunderHack-Recode), czerpiąc z niego inspiracje oraz liczne rozwiązania.
 
