@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://discord.gg/gE44XAbwN" target="_blank">
-    <img src="https://img.shields.io/discord/934396624111824900?style=for-the-badge&logo=discord&logoColor=white&color=5865F2&label=Dołącz%20do%20naszego%20Discorda" alt="Discord Server">
+    <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Server">
   </a>
 </p>
 
@@ -15,7 +15,7 @@
 > Projekt **ShadeHack** w swoich początkowych fazach rozwoju mocno wzorował się na kliencie [ThunderHack-Recode](https://github.com/Pan4ur/ThunderHack-Recode), czerpiąc z niego inspiracje oraz liczne rozwiązania.
 
 <div align="center">
-<img src="https://cdn.discordapp.com/attachments/934396624111824900/1230019159027617792/furro.gif?ex=6631cb9c&is=661f569c&hm=b6cee2cd9b6ec238f54c80dcfc421f2c8ecd3f750f2f61a62087d1e01d201e4d&" style="width: 69%">
+<img src="https://i.imgur.com/TUTAJ_WKLEJ_NOWY_LINK_DO_GIFA.gif" style="width: 69%">
 </div>
 
 ## Information
