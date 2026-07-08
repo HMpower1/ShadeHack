@@ -24,7 +24,6 @@
 - Default ClickGui keybind - **```P```** (<--- it is not, you should go to the Discord server and ask for the real keybind)
 - Default prefix - **```@```**
 - Middle click the module to bind it.
-- Be aware Expensive, DoxWare 2.0, gumballoff, Treoderia "Recode", Deluxe Client, and Quick Client are both ratted and renames of this client.
 
 ## Requires these mods:
 
